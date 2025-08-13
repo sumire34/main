@@ -6,23 +6,19 @@
   <title>dexter</title>
   <style>
     @import url('https://fonts.googleapis.com/css?family=Raleway:400,300,500,200');
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     html, body {
       height: 100%;
       width: 100%;
       font-family: Raleway, sans-serif;
       overflow: hidden;
     }
-
-    /* Default: landscape for desktop */
     .bg {
-      background-image: url('images/x-landscape.jpg');
+      background-image: url('images/xs.jpg');
       background-size: cover;
       background-position: center;
       position: fixed;
@@ -32,14 +28,11 @@
       width: 100%;
       z-index: 0;
     }
-
-    /* For phones: portrait background */
     @media (max-width: 768px) {
       .bg {
-        background-image: url('images/x-portrait.jpg');
+        background-image: url('images/x.jpg');
       }
     }
-
     .cover {
       position: relative;
       z-index: 2;
@@ -51,30 +44,25 @@
       padding: 220px 20px 0;
       text-align: center;
     }
-
     .title {
       width: 100%;
       max-width: 700px;
       color: #000;
     }
-
     .title .text {
       font-size: 5vw;
       font-weight: 300;
       margin-bottom: 20px;
     }
-
     .title .desc {
       font-size: 3vw;
       font-weight: 400;
       line-height: 1.6;
     }
-
     .title .desc a {
       color: inherit;
       text-decoration: underline;
     }
-
     .social {
       position: fixed;
       bottom: 30px;
@@ -85,7 +73,6 @@
       gap: 20px;
       flex-wrap: wrap;
     }
-
     .social a {
       color: white;
       text-decoration: none;
@@ -94,26 +81,21 @@
       transition: all 200ms;
       font-size: 14px;
     }
-
     .social a:hover span {
       font-size: 16px;
     }
-
     .social img {
       width: 30px;
       height: 30px;
       margin-right: 8px;
     }
-
     .social span {
       transition: font-size 200ms;
     }
-
     @media (min-width: 768px) {
       .title .text {
         font-size: 3rem;
       }
-
       .title .desc {
         font-size: 1.2rem;
       }
@@ -122,7 +104,6 @@
 </head>
 <body>
   <div class="bg"></div>
-
   <div class="cover">
     <div class="title">
       <div class="text">Hi, I'm Dexter!</div>
@@ -135,7 +116,6 @@
       </div>
     </div>
   </div>
-
   <div class="social">
     <a href="https://www.instagram.com/dexterity_/" target="_blank">
       <img src="images/instagram.png" alt="Instagram Logo" />
