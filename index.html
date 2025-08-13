@@ -20,8 +20,9 @@
       overflow: hidden;
     }
 
+    /* Default: landscape for desktop */
     .bg {
-      background-image: url('images/x.jpg');
+      background-image: url('images/x-landscape.jpg');
       background-size: cover;
       background-position: center;
       position: fixed;
@@ -30,6 +31,13 @@
       height: 100%;
       width: 100%;
       z-index: 0;
+    }
+
+    /* For phones: portrait background */
+    @media (max-width: 768px) {
+      .bg {
+        background-image: url('images/x-portrait.jpg');
+      }
     }
 
     .cover {
@@ -121,9 +129,9 @@
       <div class="desc">
         I'm a licensed Electronics Engineer currently accepting freelance opportunities related to IoT.
         If you have any in mind, feel free to reach out to me at: <br>
-          <a href="https://mail.google.com/mail/?view=cm&to=dexterorot00@gmail.com" target="_blank">
-            dexterorot00@gmail.com
-          </a>
+        <a href="https://mail.google.com/mail/?view=cm&to=dexterorot00@gmail.com" target="_blank">
+          dexterorot00@gmail.com
+        </a>
       </div>
     </div>
   </div>
